@@ -1,0 +1,107 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(207, 20%, 91%);
+}
+
+.grey {
+  color: hsl(212, 45%, 48%);
+}
+
+.solitude {
+  color: hsl(207, 20%, 91%);
+}
+
+.grayish-blue {
+  color: hsl(220, 15%, 55%);
+}
+
+.dark-blue {
+  color: hsl(218, 44%, 22%);
+}
+
+.center-content {
+  /* Consider using flexbox on a parent element instead for responsiveness */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: 19px;
+  padding: 0 35px;
+}
+
+.sub-text {
+  font-size: 14px;
+  padding: 0 35px;
+}
+
+p {
+  font-size: 1rem;
+  /* Example using rem unit */
+  font-family: "Outfit", sans-serif;
+}
+
+.card {
+  width: 320px;
+  height: 470px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.card img {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.attribution p {
+  margin-top: 14px;
+  padding: 0 35px;
+
+}
+
+/* Optional Media Queries (for further customization) */
+
+/* Media Queries for Smartphones (under 768px) */
+@media (max-width: 435px) {
+
+  /* Adjust card width for better fit */
+  .card {
+    width: 70%;
+  }
+
+  /* Adjust padding for better readability */
+  .card p {
+    padding: 10px 20px;
+    /* Example padding adjustment */
+  }
+
+  /* Adjust font sizes for smaller screens (optional) */
+  p {
+    font-size: 0.9rem;
+    /* Example font size adjustment */
+  }
+
+  .attribution p {
+    font-size: 11px;
+  }
+}
